@@ -60,8 +60,8 @@ export default defineConfig({
       output: {
         entryFileNames: "src/pages/[name]/index.js",
         chunkFileNames: isDev
-            ? "assets/js/[name].js"
-            : "assets/js/[name].[hash].js",
+          ? "assets/js/[name].js"
+          : "assets/js/[name].[hash].js",
         assetFileNames: (assetInfo) => {
           const { dir, name: _name } = path.parse(assetInfo.name);
           const assetFolder = dir.split("/").at(-1);
