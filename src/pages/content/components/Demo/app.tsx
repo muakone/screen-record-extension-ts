@@ -6,7 +6,7 @@ export default function App() {
     console.log("content view loaded");
   }, []);
 
-  return <div className="fixed inset-0 z-[9999] bg-black/[.2]">
+  return <div className="w-full fixed inset-0 z-[9999]">
     <Popup />
   </div>
 }
