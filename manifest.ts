@@ -15,12 +15,10 @@ const manifest: chrome.runtime.ManifestV3 = {
     type: "module",
   },
   action: {
-    // default_popup: "src/pages/popup/index.html",
+   
     default_icon: "logo.png",
   },
-  // chrome_url_overrides: {
-  //   newtab: "src/pages/newtab/index.html",
-  // },
+  
   icons: {
     "128": "logo.png",
   },
@@ -32,7 +30,7 @@ const manifest: chrome.runtime.ManifestV3 = {
       css: ["assets/css/contentStyle<KEY>.chunk.css"],
     },
   ],
-  // devtools_page: "src/pages/devtools/index.html",
+  
   web_accessible_resources: [
     {
       resources: [
